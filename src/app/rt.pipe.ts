@@ -10,7 +10,7 @@ export class RtPipe implements PipeTransform{
 		    .map(function(item,i,arr){
 			switch (item) {
 			// russian 
-			case 'а': {if (arr[i-1]=='а'){ return 'double a!';}else{return 'a';}}
+			case 'а': {return 'a';}
 			case 'б': {return 'b';}
 			case 'в': {return 'v';}
 			case 'г': {return 'g';}
